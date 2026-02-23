@@ -3,6 +3,5 @@ public class helloworld {
         System.out.println("welcome to DevOps");
         System.out.println("welcome to DevOps Day2");
         System.out.println("welcome to DevOps Day3");
-        System.out.println("welcome to DevOps Day4");
     }
 }
