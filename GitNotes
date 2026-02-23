@@ -1,0 +1,109 @@
+Git is a version control system. If any changes are made to the code it will be saved as new version. with the help of version control you can easyly go back to the old version. reverting to old version is so simple.
+You can see who has made what changes to the code from Git.
+Note: Version should be enabled in Git.
+Git - it is used on local system.
+Github- its used at cloud level to save code at a centralized location and to push the deployment via pipelines.
+
+Example:
+
+Develop a clock. Which language will you use.
+
+We use Python.
+Why phython?
+It has large number built in libraries available. you can call the library and use it.
+
+keyword to call the library? 
+Ans: import
+
+Interview question:
+
+What is the command to go back to previous version in Git?
+Ans: Git revert
+
+Note: This is possible only if you are maintaing the version.
+
+What is Artifacts?
+Compail the code and a binary file will be created and with the help of binary file merge with the packages and build will be ready. This is called Build or Artifact.
+
+Note: Build or Artifact is the same. But use Artifacts in interview for better package.
+
+What is README file? Interview question.
+You can see information about the repository, project, code and instructions how to use it. How to run it. how to create it.how to delete it.
+
+Link to download Git software
+https://git-scm.com/install/windows
+
+Fork option: 
+To copy code from one repository to other.
+
+Example:
+
+open vlc github and click on fork option and it will show to which github accuont it needs to copy. Select your Github account and it will be copied.
+
+how will you download the code to the local machine?
+
+You can open the Gitbash and run the Git clone command
+
+Git clone https://github.com/gshafeeq/vlc.git
+
+now we have created a Github account online and installd Git software locally.
+Next we need to intigrate Git and Github how to do it?
+Git config command is used.
+
+git config --global user.name "Shafeeqgs"
+
+git config --global user.email gshafeeq93@gmail.com
+
+git config --global --list
+
+git hub is a centralized location where developer pushes the code and it will be maintained in that location.
+
+DevOps role - creation of repos, branches, branch production tools, branch security related activities has to be taken care by the DevOps engineer.
+
+We have provided best practices for developer and they are following those steps and maintaining the code at a centralized location.
+
+Why centralized location?
+
+it provides transparacy and provides collabration between developers and we can see which user has made what changes and we can maintain version of the code.
+so if the requirement is changed and if we need to revert back to older version, it will a easy task to go back to older version.
+
+=================================================================================================
+
+echo "# Mysecondrepo" >> README.md
+git init
+git add README.md
+git commit -m "first commit"  
+git branch -M main
+git remote add origin https://github.com/gshafeeq/Mysecondrepo.git
+git push -u origin main
+
+git init - .git folder will be created where it stores the memory of git in this directory.
+
+git commit -m "first commit" - When you run this command, it will create a commit ID for the files commited. Using this commit ID we can track changes made to the file.
+
+
+what is branch in github?
+Ans: Branch is a place where our code is maintained or save.
+
+How to create Branch?
+Ans: you need to click on main branch option and you can create new branch.
+
+Why you are creating Branch?
+Ans:  For each Developer we will create a branch and they will wite their code in their branch. Finally this code will be merged to the main branch with the help of PR request.
+
+You need to raise a PR (Pull Request) or Merge Request to merge the code of any other branch to the main branch. When you raise a pull request, the request will be reviewed by anyone of the team member and if the code is ok they will review and merge it to the main branch.
+
+Why is Pull Request is required?
+
+If we don't use PR to merge the code. We will have merge conflits. If all the develops will push the code to the main branch at a time without raising the PR it wil cause a merge conflict and the merge will fail.
+
+So in real time to merge the code to main branch, each developer will raise PR so that code will be reviewed and merged and it will go to other developers PR and reveiw and merge it. So they will not be any conflict during merging the code.
+
+
+Note: In real time Git repo visibility will be set to private and users will be given access to that repo to write their code. You can change the visiblity to public or private from settings option.
+
+To give access to users. Go to Settings ->colloborators option on the left pane. Add Users and give email ids of the users.
+
+Note: we call workspace in Git for a directory or folder. In interview always tell workspace.
+
+Workspace= It is a folder in your laptop where you write your code.
